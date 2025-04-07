@@ -1,4 +1,4 @@
-# MCP SQL Agent ☀️
+# MCP SQL Agent 
 
 This project demonstrates a simple client-server implementation using the Model Context Protocol (MCP), which is a standardized way to connect large language models with tools and data, specifically for managing and interacting with an SQLite database.
 
