@@ -1,15 +1,13 @@
-# tools.py
 from mcp.server.fastmcp import FastMCP
 import sqlite3
 
 # Initialize FastMCP server
 mcp = FastMCP("DatabaseTool")
 
-# Function to execute SQL queries
 def execute_sql_command(sql: str) -> str:
     try:
         # Connect to the database named 'mcp_db' (or create it if not exists)
-        conn = sqlite3.connect('./mcp_db.db')  # Database name is mcp_db
+        conn = sqlite3.connect('./mcp_db.db')  
         cursor = conn.cursor()
         cursor.execute(sql)
         conn.commit()
@@ -33,7 +31,7 @@ async def database_update_tool(query: str) -> str:
 async def query_data(sql: str) -> str:
     """Execute SELECT SQL queries safely"""
     try:
-        conn = sqlite3.connect("./mcp_db.db")  # Database name is mcp_db
+        conn = sqlite3.connect("./mcp_db.db") 
         cursor = conn.cursor()
         result = cursor.execute(sql).fetchall()
         conn.commit()
