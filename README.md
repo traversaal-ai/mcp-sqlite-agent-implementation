@@ -125,7 +125,7 @@ Feel free to adjust the column names and data types based on your specific requi
 
 Assistant: meta=None content=[TextContent(type='text', text='Query executed successfully. 0 rows affected.', annotations=None)] isError=False
 
-##Resources
+## Resources
 This project uses:
 
 Model Context Protocol Python SDK
